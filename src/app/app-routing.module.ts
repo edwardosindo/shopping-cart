@@ -5,15 +5,17 @@ import { ProductComponent } from './components/product/product.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { HomeComponent} from './components/home/home.component';
+import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
+
 
 
 const routes: Routes = [
-  { path: '', component: ProductComponent },
+  // { path: '', component: ProductComponent },
   { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
   { path: 'sign-in', component: SignInComponent },
   { path: 'register-user', component: SignUpComponent },
   { path: 'home', component: HomeComponent },
-  
+  { path: 'verify-email-address', component: VerifyEmailComponent },
 	{ path: 'products', component: ProductComponent },
 	{ path: 'cart', component: CartComponent },
   // { path: '**', redirectTo: '' }
